@@ -8,16 +8,21 @@ public class Pessoa {
 		
 	}
 	
-	void dar(int numfigurinha, Pessoa pessoa ) {
+	boolean dar(int numfigurinha, Pessoa pessoa ){
+		
+		
 		if(this.numfigurinha < numfigurinha) {
 		System.out.println("Você não pode fazer a troca, quantidade invalida! ");
+		return false;
 	}
 		else {
 			this.numfigurinha -= numfigurinha;
 	
-	pessoa.receber(numfigurinha);
+			pessoa.receber(numfigurinha);
+			return true;
 
 		}
+		
 	}
 	
 	

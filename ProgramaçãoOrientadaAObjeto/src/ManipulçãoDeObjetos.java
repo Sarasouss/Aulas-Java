@@ -7,8 +7,7 @@ public class ManipulçãoDeObjetos {
 		
 		
 		pessoa1.nome = "Sara"; // dando valor a variavel
-		pessoa1.numfigurinha = 1;
-		pessoa1.receber(5);
+		pessoa1.numfigurinha = 8;
 
 		System.out.println("Nome: " + pessoa1.nome);
 		System.out.println("Número de Figurinhas: " + pessoa1.numfigurinha);
@@ -24,9 +23,10 @@ public class ManipulçãoDeObjetos {
 		System.out.println("Número de figurinhas: " + pessoa2.numfigurinha);
 		
 		
-		pessoa1.dar(16, pessoa2);
+		boolean msg = pessoa1.dar(5, pessoa2);
 		
-		System.out.println("---------------------------------------------");
+		if(msg==true) {
+		System.out.println("----------------------------------------------------");
 		System.out.println("Número de figurinhas de cada um após a ação");
 		
 		System.out.println("Nome: " + pessoa1.nome);
@@ -34,8 +34,7 @@ public class ManipulçãoDeObjetos {
 		
 		System.out.println("nome: " + pessoa2.nome);
 		System.out.println("Número de figurinhas: " + pessoa2.numfigurinha);
-		
-		
+		}
 		
 
 		
