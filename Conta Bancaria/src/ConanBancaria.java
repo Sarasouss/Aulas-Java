@@ -11,6 +11,16 @@ public class ConanBancaria {
 		saldo = 1.0;
 		ativo = true;
 	}
+	
+	
+
+	public ConanBancaria(boolean ativo, int numConta, double saldo) {
+		this.numConta = numConta;
+		this.saldo = saldo;
+		this.ativo = ativo;
+	}
+
+
 
 	//Método de receber
 	public void Receber(double valor){
