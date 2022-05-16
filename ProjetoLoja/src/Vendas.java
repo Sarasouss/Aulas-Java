@@ -2,20 +2,20 @@
 public class Vendas {
 
 	public static void main(String[] args) {
-		double prod1 = 150;
+		double prod1 = 150; //Declarou as variaveis e determinou o valor delas, double = tipo, prod1 = nome, 150 = valor
 		double prod2 = 200;
 		double totalp;
 		double desc;
 		double prodesc;
 		
-		totalp = prod1 + prod2;
-		System.out.println("O total da compra È de R$ " + totalp );
+		totalp = prod1 + prod2; // Adiconou Resultado na vari√°vel√ß total com a somas das outras duas
+		System.out.println("O total da compra √© de R$ " + totalp ); // Syso para mostrar o conteudo na tela 
 		
 		desc = totalp * 0.15;
-		System.out.println("O valor do desconto È de R$ " + desc);
+		System.out.println("O valor do desconto √© de R$ " + desc);
 		
 		prodesc = totalp - desc;
-		System.out.println("O total com o desconto È de R$ " + prodesc);
+		System.out.println("O total com o desconto √© de R$ " + prodesc);
 		
 
 	}
