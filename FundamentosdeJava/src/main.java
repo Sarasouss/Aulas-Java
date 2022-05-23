@@ -12,8 +12,8 @@ public class main {
 //		short z = 10000; 
 //		System.out.println(z);
 //		
-//		a = (int)y; //Casting: o a n�o consegue receber y por ser menor do que as informa��es de y 
-//		b = x; // b recebe x por ter espa�o sobrando 
+//		a = (int)y; //Casting: o a não consegue receber y por ser menor do que as informações de y 
+//		b = x; // b recebe x por ter espaço sobrando 
 //		
 //		System.out.println(x);
 //		System.out.println(y);
@@ -24,7 +24,7 @@ public class main {
 //		int idadePessoa = 68;
 //		
 //		if(idadePessoa < 18) {
-//			System.out.println("Voce n�o pode beber");
+//			System.out.println("Voce não pode beber");
 //		}
 //		
 //		else if (idadePessoa < 60) {
@@ -32,9 +32,9 @@ public class main {
 //			
 //		}
 //		else {
-//			System.out.println("quanto � sua aposentadoria ?");
+//			System.out.println("quanto é sua aposentadoria ?");
 //		}
-//		System.out.println("Voc� tem " + idadePessoa + " anos ");
+//		System.out.println("Você tem " + idadePessoa + " anos ");
 //
 //		int num = 8;
 //		
@@ -46,7 +46,7 @@ public class main {
 //				System.out.println("Segunda-Feira");
 //				break;
 //			case 3:
-//				System.out.println("Ter�a-Feira");
+//				System.out.println("Terça-Feira");
 //				break;
 //			case 4:
 //				System.out.println("Quarta-Feira");
@@ -58,10 +58,10 @@ public class main {
 //				System.out.println("Sexta-Feira");
 //				break;
 //			case 7:
-//				System.out.println("S�bado");
+//				System.out.println("Sábado");
 //				break;
 //			default:
-//				System.out.println("esse n�mero n�o condiz com um dia da semana");
+//				System.out.println("esse número não condiz com um dia da semana");
 //			
 //		}
 //		
@@ -69,10 +69,10 @@ public class main {
 //
 //		switch (caractere) {
 //		case 'a':
-//			System.out.println("Sua letra � a");
+//			System.out.println("Sua letra é a");
 //			break;
 //		case 'b':
-//			System.out.println("Sua letra� b");
+//			System.out.println("Sua letraé b");
 //			break;
 //		default:
 //			System.out.println("Valor invalido");
@@ -85,7 +85,7 @@ public class main {
 //		System.out.println("Pode prosseguir");
 //		break;
 //	case "amarelo":
-//		System.out.println("Aten��o");
+//		System.out.println("Atenção");
 //		break;
 //	case "vermelho":
 //		System.out.println("Pareeeeeee");
@@ -119,7 +119,7 @@ public class main {
 //Scanner entrada = new Scanner(System.in);
 //		
 //		
-//		System.out.println("Digite o n�mero desejado");
+//		System.out.println("Digite o número desejado");
 //		int num = entrada.nextInt();
 //		
 //		for(int x=0; x <11; x++) {
@@ -135,7 +135,7 @@ public class main {
 		for (int aux1 = 0; aux1 < nome.length; aux1++ ) {
 			System.out.println(nome[aux1]);
 		if (nome[aux1] == "Gustavo") {
-			System.out.println("O indice de Gustavo � = " + aux1);
+			System.out.println("O indice de Gustavo é = " + aux1);
 		}
 		}
 		
@@ -147,14 +147,53 @@ public class main {
 		Scanner teclado = new Scanner(System.in);
 		
 		for (int aux2 = 0; aux2 < numero.length; aux2++) {
-			System.out.println("Digite um n�mero qualquer");
+			System.out.println("Digite um número qualquer");
 			numero[aux2] = teclado.nextInt();
 		}
 		
 		for (int aux2 = 0; aux2 < numero.length; aux2++) {
 			System.out.println("Indice " +aux2+" = " + numero[aux2]);
 		}
-				
+		// criando um array do tipo Object, nele é possível guardar qualquer tipo de
+		// valor, visto que Object é a superclasse de todas as outras classes no java
+//		int[] arrayQualquer = new int[3]; // arrays precisam ser instanciados, caracteristica que indica que os espaços
+//											// da matriz são construidos na memória heap e na stack estão apenas os
+//											// endereços desses espaços
+//		Object[] arrayObject = new Object[6];
+//
+//		arrayObject[0] = 12;
+//		arrayObject[1] = "Beatriz";
+//		arrayObject[2] = 13.8;
+//		arrayObject[3] = true;
+//		arrayObject[5] = arrayQualquer; // o array de tipo Object recebe qualquer valor, inclusive outro array. neste
+//										// caso não foi especificado o valor de qual espaço é para ser impresso na
+//										// tela, então o que é mostrado é o endereço desse array
+//
+//		for (int x = 0; x < arrayObject.length; x++) {
+//			System.out.println("Indice " + x + " = " + arrayObject[x]);
+//		}
+
+		// Arrays Bidirecional: que possui duas direções, linhas e colunas
+		// construção de Array bidirecional:
+		int[][] arrayBidirecional = new int[4][3]; // o primeiro colchetes determina a quantidade de linhas e o segundo
+													// a quantidade de colunas
+		arrayBidirecional[0][0] = 8;// para atribuir valores neste array basta indicar o indice de em qual linha o
+									// valor vai ser encontrado e o indice de em qual coluna
+		arrayBidirecional[2][1] = 7;// aqui o valor 7 inteiro está localizado no espaço do array na linha 2 e na
+									// coluna 1, lembrando que os indices começam em 0
+
+		for (int linha = 0; linha < arrayBidirecional.length; linha++) { // for para contagem do primeiro indice
+			for (int coluna = 0; coluna < arrayBidirecional[0].length; coluna++) { // for para contagem o segundo
+																					// indice, logo quando o indice da
+																					// linha for 0, o da coluna roda até
+																					// atingir o maximo de colunas,
+																					// assim interando a primeria linha
+																					// do array e indo rodar a segunda
+				System.out.print("Indice [" + linha + "][" + coluna + "] = " + arrayBidirecional[linha][coluna] + " ");
+			}
+			System.out.println();
+		}
+		
 		
 	}	
 }
