@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+
 public class Aplicacao {
 	public static void main(String[] args) throws IOException {
 		Scanner entrada = new Scanner(System.in);
@@ -14,13 +15,27 @@ public class Aplicacao {
 		List<Pessoa> Cadastro = new ArrayList<Pessoa>();
 //		Depois cria uma lista pra poder colocar todos os cadastos
 		for (int x = 0; x < 4; x++) {
+			System.out.println("Cadastro " + x);
 			Pessoa pessoa = new Pessoa(1);
 			System.out.println("Digite seu nome");
 			pessoa.setNome(entrada.next());
 			System.out.println("Digite sua idade");
-			pessoa.setIdade(entrada.next());
+			pessoa.setIdade(entrada.nextInt());
 			System.out.println("Digite seu Gênero 1-Feminino 2-Masculino");
-			pessoa.sexoNum(entrada.nextInt());
+			int opcao = 0;
+			while (opcao != 1 && opcao != 2) {
+				opcao = entrada.nextInt();
+				if (opcao == 1) {
+					pessoa.setSexo(Sexo.FEMININO);
+				} else if (opcao == 2) {
+					pessoa.setSexo(Sexo.MASCULINO);
+				} else {
+					System.out.println("Errado");
+					System.out.println("Digite seu Gênero 1-Feminino 2-Masculino");
+				}
+			}
+//			Criamos um metodo para receber o resultado do if, else
+//			Conforme o numero digitado ele recebe o sexo da pessoa
 			pessoa.setEndereco(new Endereco(1));
 			System.out.println("Digite sua Rua");
 			pessoa.getEndereco().setRua(entrada.next());
@@ -40,6 +55,7 @@ public class Aplicacao {
 
 			List<Pessoa> Cadastro2 = new ArrayList<Pessoa>();
 //		Crio outra lista para receber os novos objetos vindos do txt
+			
 			try (BufferedReader reader = new BufferedReader(new FileReader("Pessoa.txt"))) {
 				String line;
 				while ((line = reader.readLine()) != null) {
@@ -49,7 +65,7 @@ public class Aplicacao {
 //		Aqui pegamos todo o conteudo do txt, lemos e tranformamos em uma nova lista	
 
 				for (Pessoa cadastro : Cadastro) {
-				System.out.println(cadastro);
+					System.out.println(cadastro);
 //		Mostramos o conteudo por partes na tela
 				}
 

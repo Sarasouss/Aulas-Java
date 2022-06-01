@@ -23,12 +23,12 @@ public class Endereco {
 	public void setBairro(String bairro) {
 		this.bairro = bairro;
 	}
-	
+//	Como sao atributos privados criamos o get e set
 	@Override
 	public String toString() {
 		return ",Endereço: " + rua + "-" + num + "-" + bairro;
 	}
-//	Como sao atributos privados criamos o get e set
+// o to string ajuda a visualizar o contedo que sera mostrado
 	public Endereco(int x) {
 
 	}
