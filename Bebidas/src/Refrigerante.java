@@ -6,6 +6,7 @@ public class Refrigerante extends Bebida {
 		super("Refrigerante", false);
 		
 	}
+//	Adicionamos com o super os parametros de Refrigerante
 
 	@Override
 	public void preparar() {
@@ -13,6 +14,6 @@ public class Refrigerante extends Bebida {
 		System.out.println("Colocar Gelo");
 		System.out.println("Colocar Refrigerante");
 	}
-	
+//Aqui colocamos o que vai acontecer quando chamamrmos refrigerante.prepararbebida
 	
 }
