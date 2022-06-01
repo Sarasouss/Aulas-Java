@@ -5,5 +5,5 @@ public class Diamante  extends Item {
 	public void pegar() {
 	
 	}
-
+//	extendendo o metodo pegar da classe Item
 }
