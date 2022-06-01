@@ -8,7 +8,7 @@ public class Aplicacao {
 		
 		LeiteQuente leitequente = new LeiteQuente();
 		preparador.prepararBebida(leitequente);
-//	utilizados os metodos de Bebida com os parametros de Leite quente	
+//	utilizandos os metodos de Bebida com os parametros de Leite quente	
 		Refrigerante refrigerante = new Refrigerante();
 		preparador.prepararBebida(refrigerante);
 	}
