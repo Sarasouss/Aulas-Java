@@ -4,11 +4,11 @@ public class Cliente {
 	private String nome;
 	private int CPF;
 	private int numConta;
-	
+// Criando a variavel com as informacoes de Cliente
 	public Cliente() {
-		
 	}
-
+// Criando o construtor
+	
 	public String getNome() {
 		return nome;
 	}
@@ -32,7 +32,8 @@ public class Cliente {
 	public void setNumConta(int numConta) {
 		this.numConta = numConta;
 	}
-
+// Como os meodos d ecliente sao privados, criasse o get e set
+//	Para chama-los em outras classes
 	@Override
 	public String toString() {
 		return "\nCliente: \nNome=" + nome + ",\nCPF=" + CPF + ",\nNúmero da Conta=" + numConta;
