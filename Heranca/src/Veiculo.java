@@ -1,18 +1,23 @@
 
 public class Veiculo {
+// Classe principal de onde todas outras serao  herdadas
 	private String nome;
 	protected String marca;
 	protected String modelo;
 	protected int ano;
+// atributos que todas classes terao
 	
 	public void buzinar() {
 		System.out.println("BI BI");
 	}
+// metodo que todas classes terao
+	
 	public void imprimir() {
 		System.out.println("Marca: " + marca );
 		System.out.println("Modelo: " + modelo);
 		System.out.println("Ano: " + ano);
 	}
+// Como sera mostrado na tela 
 	
 	public String getNome() {
 		return nome;
@@ -38,8 +43,7 @@ public class Veiculo {
 	public void setAno(int ano) {
 		this.ano = ano;
 	}
-	
-	
+// get e set dos atributos da heranca
 	
 }
 

@@ -2,13 +2,12 @@
 public class Carro  extends Veiculo{
 	
 	private boolean quatroPortas;
-	
-	
+// atributo unico de carro
 
 	@Override
 	public void imprimir() {
-		// TODO Auto-generated method stub
 		super.imprimir();
+//herda os metodos da classe veiculo
 		System.out.println("Tem 4 Portas? " + quatroPortas);
 	}
 
@@ -19,6 +18,6 @@ public class Carro  extends Veiculo{
 	public void setQuatroPortas(boolean quatroPortas) {
 		this.quatroPortas = quatroPortas;
 	}
-	
+// gete set do atributo
 	
 }
