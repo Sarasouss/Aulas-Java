@@ -13,7 +13,7 @@ public class Main {
 		lampada2.Imprimir();
 		lampada2.Ligar();
 		lampada2.Imprimir();
-		// fazendo teste com as lampadas para mostara seu estado
+		// fazendo teste com as lampadas para mostrar seu resultado
 	}
 
 }
