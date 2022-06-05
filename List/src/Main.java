@@ -5,55 +5,46 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		List lista = new ArrayList(); // a interface list tem função semelhante aos arrays, guardar mais de um valor
-										// na mesma variável, sua particularidade é que os metódos dela implementados
-										// permitem que ela se redimencione de acordo com o que for atribuido ao
-										// longo do programa, diferente do array que uma vez atribuido seu tamanho, não
-										// pode-se mudar. A classe que implementa List usada é a ArrayList e ambas são
-										// do java e estão uma biblioteca na JRE, logo devem ser importadas para serem
-										// usadas
+		List lista = new ArrayList(); 
+		
+		// Criamos o objeto lista e seu construtor ArrayLista
 
-		lista.add("abc"); // o método add de List, implementado por ArrayList, que recebe como parâmetro
-							// um valor do tipo Object, ou seja qualquer valor, tem como função adicionar
-							// novos valores à sua lista e consequentemente redimensionando ela, aumentando
-							// seu tamanho para comportar os novos valores
-		lista.add(12);
+		lista.add("abc"); 
 		lista.add(true);
+		// adicionamos valores a lista
 
-//		for (int x = 0; x < lista.size(); x++) { // List é uma interface, logo não possui o atributo length como os
-//													// objetos de tipo array, então para determinação de quando o for
-//													// deve parar de rodar de acordo com seu tamanho, usa-se o método
-//													// size, que informa justamente qual tamanho atual da lista, até a
-//													// determinada situação do programa
-//			System.out.println(lista.get(x)); // para capturar o valor usa-se o método get, que nesse caso de List
-//												// recebe como parâmetro o indice de qual informação será capturada
+//		for (int x = 0; x < lista.size(); x++) {
+
 //		}
-		for (Object valor : lista) { // tipo de for usado para List e arrays unidimencionais, que com o ":" faz-se
-										// todo processo do for acima e o guarda em uma variável, como na lista List
+		// utilizamos esse metodo para saber o tamanho da lista
+		for (Object valor : lista) { 
+										
 			System.out.println(valor);
 		}
-
-		System.out.println();
+		 // uma forma mais simples de passar pelos valores da lista 
+		
+				System.out.println();
 
 		lista.remove(0);
 		for (Object valor : lista) {
 			System.out.println(valor);
 		}
 		System.out.println();
+		//Quando removermos um elemento ele nao ficara nulo
 
-		lista.add(0, "def");
+		lista.add(0, "def");// adiciona um valor a lista
 		for (Object valor : lista) {
 			System.out.println(valor);
 		}
 		System.out.println();
 
-		lista.set(0, "ghi");
+		lista.set(0, "ghi");// defini um valor em posicao especifica
 		for (Object valor : lista) {
 			System.out.println(valor);
 		}
 		System.out.println();
 
-		lista.clear();
+		lista.clear(); // apaga todos registros
 		if (lista.isEmpty()) {
 			System.out.println("Sua lista está vazia!");
 		}
@@ -62,13 +53,15 @@ public class Main {
 		Conta conta2 = new Conta("Água", 80.65);
 
 		List<Conta> listaDeContas = new ArrayList<Conta>();
-
+		// criamos uma lista com os metodos de conta
 		listaDeContas.add(conta1);
 		listaDeContas.add(conta2);
+		// adicionamos  conta1 e conta2 a lista
 
 		for (Conta conta : listaDeContas) {
 			System.out.println(conta);
 		}
+		// imprime o que esta dentro da lista 
 
 	}
 
