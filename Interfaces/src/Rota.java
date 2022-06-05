@@ -8,4 +8,5 @@ public class Rota {
 		automovel.acelerar();
 		automovel.VirarDir();
 	}
+	//Adicionando os atributos da interface ao metodo ir de Rota
 }

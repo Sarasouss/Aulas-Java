@@ -1,5 +1,6 @@
 
-public class Ferrari implements Automovel, ItemCaro {//implementar todos os metodos de Automovel 
+public class Ferrari implements Automovel, ItemCaro {
+	//implementar todos os metodos de Automovel 
 
 	@Override
 	public void virarEsq() {
@@ -23,6 +24,6 @@ public class Ferrari implements Automovel, ItemCaro {//implementar todos os meto
 	public double getpreco() {
 		return 1000000;
 	}
-	
-	
+	//Implementando os metodos da interface carro e item segundo a classe Ferrari
+	//Ou seja uma unica classe pode implementar de varias interfaces
 }

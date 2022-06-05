@@ -24,7 +24,6 @@ public class Fusca  implements Carro {
 		System.out.println("Fusca abriu a porta");
 		
 	}
-	
-	
+	//Implementando os metodos da interface carro segundo a classe Fusca
 
 }

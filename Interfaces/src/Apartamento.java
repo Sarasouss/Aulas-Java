@@ -6,5 +6,5 @@ public class Apartamento implements ItemCaro{
 		return 250000;
 	}
 	
-
+// implementa a interface Item caro
 }
