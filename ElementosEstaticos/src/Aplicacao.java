@@ -33,5 +33,6 @@ public class Aplicacao {
 		
 
 		System.out.println(Constantes.MEDIA_DA_PROVA);
+// Imprime o valor da constante
 	}
 }
