@@ -5,7 +5,7 @@
 		private int numConta;
 		private double saldo;
 		private boolean ativo;
-//	Criando as variaveis dos emtodos da conta
+//	Criando as variaveis dos metodos da conta
 		public ConanBancaria() {
 			numConta = 1 ;
 			saldo = 1.0;

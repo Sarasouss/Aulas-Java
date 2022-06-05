@@ -23,11 +23,11 @@ public class Main {
 //				System.out.printf("O valor na conta 2 é de R$%.2f%n%n",conta2.Ver());
 //				
 				Cliente cliente1 = new Cliente();
-				
+// Crie o Objeto cliente1
 				cliente1.setNome("Rafael");
 				cliente1.setCPF(123456);
 				cliente1.setNumConta(1237763);
-				
+// Coloque os atributos
 //				System.out.println(cliente1);
 			
 				
@@ -52,7 +52,7 @@ public class Main {
 				}else {
 					System.out.println("Os atríbutos são diferentes!");
 				}
-				
+// Usando if else para mostrar uma mensagem caso o  equals seja igual ou diferente				
 				
 			}
 

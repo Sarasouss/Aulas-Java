@@ -32,12 +32,13 @@ public class Cliente {
 	public void setNumConta(int numConta) {
 		this.numConta = numConta;
 	}
-// Como os meodos d ecliente sao privados, criasse o get e set
+// Como os metodos de cliente sao privados, criasse o get e set
 //	Para chama-los em outras classes
 	@Override
 	public String toString() {
 		return "\nCliente: \nNome=" + nome + ",\nCPF=" + CPF + ",\nNúmero da Conta=" + numConta;
 	}
+// Criando to string para mostrar os atributos de cliente e nao seu endereco
 
 	@Override
 	public int hashCode() {
@@ -55,7 +56,7 @@ public class Cliente {
 		Cliente other = (Cliente) obj;
 		return CPF == other.CPF && Objects.equals(nome, other.nome) && numConta == other.numConta;
 	}
-	
+// Fazendo a comparacao  dos atributos de dois objetos com equals
 	
 	
 	
