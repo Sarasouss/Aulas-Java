@@ -1,29 +1,30 @@
 import java.util.Scanner;
+//	Aqui utilizamos a importacao de biblioteca
 
 public class Aplicacao {
-
+//Sobrecarga: e a utilizaÃ§Ã£o de um mesmo nome em um metodo com funcoes diferentes
 	public static void main(String[] args) {
 
 		Scanner entrada = new Scanner(System.in);
-
+		
 		Matematica matematica = new Matematica();
-
-		System.out.println("<---- Somar dois números ---->");
-		System.out.println("Digite o primeiro número");
+//		criando os objetos
+		System.out.println("<---- Somar dois nï¿½meros ---->");
+		System.out.println("Digite o primeiro nï¿½mero");
 		int x = entrada.nextInt();
-
-		System.out.println("Digite o segundo número");
+//		Reecebendo o valor de x
+		System.out.println("Digite o segundo nï¿½mero");
 		int y = entrada.nextInt();
-
+//		Recebendo o valor de y
 		int soma = matematica.somar(x, y);
-		System.out.println("O resultado é " + soma);
-
+		System.out.println("O resultado ï¿½ " + soma);
+//		Primeira funcao de somar, no caso com int
 		soma = matematica.somar(x, y);
-		System.out.println("O resultado é " + soma);
-
+		System.out.println("O resultado ï¿½ " + soma);
+//		segunda acao de somar podemos adicionar ate 3 numeros int
 		double soma2 = matematica.somar(x, y);
-		System.out.println("O resultado é " + soma2);
-
+		System.out.println("O resultado ï¿½ " + soma2);
+//		terceira acao de somar com numeros em double
 	}
 
 }

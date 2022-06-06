@@ -14,5 +14,5 @@ public class Matematica {
 	double somar (double x, double y) {
 		return x + y ;
 	}
-
+// criamos varios metodos e atributos com a memsa variavel somar, fazendo uma sobrecarga
 }
