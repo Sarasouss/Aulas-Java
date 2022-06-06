@@ -46,7 +46,7 @@ public class Pessoa {
 	}
 
 //	Se nao criasse esse contrutor seriamos obrigados
-//	a colocar o conteúdo na construcao do objeto
+//	a colocar o conteudo na construcao do objeto
 	public Pessoa(String texto) {
 		String[] arrayAuxiliar1 = texto.split(",");
 
@@ -55,10 +55,12 @@ public class Pessoa {
 
 		String[] arrayAuxiliar3 = arrayAuxiliar1[1].split(":");
 		this.idade = Integer.parseInt(arrayAuxiliar3[1].trim());
+//		parse e um tipo de casting, faz com que o programa leia
+//		com o tipo escolhido, nesse caso int
 
 		String[] arrayAuxiliar4 = arrayAuxiliar1[2].split(":");
 		String nu = arrayAuxiliar4[1].trim();
-//		Aqui quebramos e tiramos os espaços do conteudo do txt
+//		Aqui quebramos e tiramos os espaï¿½os do conteudo do txt
 		if (nu == "MASCULINO") {
 			this.sexo = Sexo.MASCULINO;
 		} else {
@@ -68,7 +70,10 @@ public class Pessoa {
 //	dependendo do valor eu dei um resultado sobre o sexo
 		String[] arrayAuxiliar5 = arrayAuxiliar1[3].split(":");
 		this.endereco = new Endereco(arrayAuxiliar5[1]);
-//	instaciou um novo endereço, e fez o mesmo com o conteudo do cadastro acima ex: nome 
+//	instaciou um novo endereco, e fez o mesmo com o conteudo do cadastro acima ex: nome 
 	}
+
+
+	
 
 }

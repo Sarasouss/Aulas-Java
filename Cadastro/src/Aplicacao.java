@@ -14,6 +14,7 @@ public class Aplicacao {
 //		Primeiro chama o scanner para poder digitar as informacoes
 		List<Pessoa> Cadastro = new ArrayList<Pessoa>();
 //		Depois cria uma lista pra poder colocar todos os cadastos
+//		List: Conseguimos ter controle sobre ond cada elemno se√° inserido
 		for (int x = 0; x < 4; x++) {
 			System.out.println("Cadastro " + x);
 			Pessoa pessoa = new Pessoa(1);
@@ -21,7 +22,7 @@ public class Aplicacao {
 			pessoa.setNome(entrada.next());
 			System.out.println("Digite sua idade");
 			pessoa.setIdade(entrada.nextInt());
-			System.out.println("Digite seu GÍnero 1-Feminino 2-Masculino");
+			System.out.println("Digite seu GÔøΩnero 1-Feminino 2-Masculino");
 			int opcao = 0;
 			while (opcao != 1 && opcao != 2) {
 				opcao = entrada.nextInt();
@@ -31,7 +32,7 @@ public class Aplicacao {
 					pessoa.setSexo(Sexo.MASCULINO);
 				} else {
 					System.out.println("Errado");
-					System.out.println("Digite seu GÍnero 1-Feminino 2-Masculino");
+					System.out.println("Digite seu GÔøΩnero 1-Feminino 2-Masculino");
 				}
 			}
 //			Criamos um metodo para receber o resultado do if, else
@@ -39,19 +40,19 @@ public class Aplicacao {
 			pessoa.setEndereco(new Endereco(1));
 			System.out.println("Digite sua Rua");
 			pessoa.getEndereco().setRua(entrada.next());
-			System.out.println("Digite o n˙mero da sua casa");
+			System.out.println("Digite o nÔøΩmero da sua casa");
 			pessoa.getEndereco().setNum(entrada.next());
 			System.out.println("Digite seu Bairro");
 			pessoa.getEndereco().setBairro(entrada.next());
 			Cadastro.add(pessoa);
 		}
-//		Aqui todas as informaÁoes foram adicionadas a lista
+//		Aqui todas as informacoes foram adicionadas a lista
 
 		try (BufferedWriter escrever = new BufferedWriter(new FileWriter("Pessoa.txt", true))) {
 			for (Pessoa pessoa : Cadastro) {
 				escrever.write(pessoa.toString() + "\n");
 			}
-//		Criei o metodo escrever para criar um txt com os cadastros, e o true para nao subescrevelos 
+//		Criei o metodo escrever (BufferedWhiter) para criar um txt com os cadastros, e o true para nao subescrevelos 
 
 			List<Pessoa> Cadastro2 = new ArrayList<Pessoa>();
 //		Crio outra lista para receber os novos objetos vindos do txt
@@ -62,11 +63,12 @@ public class Aplicacao {
 					Pessoa pessoa = new Pessoa(line);
 					Cadastro2.add(pessoa);
 				}
-//		Aqui pegamos todo o conteudo do txt, lemos e tranformamos em uma nova lista	
+//		Aqui pegamos todo o conteudo do txt, lemos (com o metodo BufferedReader) e tranformamos em uma nova lista	
 
 				for (Pessoa cadastro : Cadastro) {
 					System.out.println(cadastro);
-//		Mostramos o conteudo por partes na tela
+//		Mostramos o conteudo por partes na tela com o syso
+//		syso: metodo do java para mostrar uma informacao na tela
 				}
 
 			}

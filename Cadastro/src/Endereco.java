@@ -4,6 +4,7 @@ public class Endereco {
 	private String num;
 	private String bairro;
 //	Criando as variaveis utilizadas em endereco
+//	Variaveis: permite que guadermos informacoes na memoria durante o uso do programa
 	
 	public String getRua() {
 		return rua;
@@ -26,7 +27,7 @@ public class Endereco {
 //	Como sao atributos privados criamos o get e set
 	@Override
 	public String toString() {
-		return ",Endereço: " + rua + "-" + num + "-" + bairro;
+		return ",Endereï¿½o: " + rua + "-" + num + "-" + bairro;
 	}
 // o to string ajuda a visualizar o contedo que sera mostrado
 	public Endereco(int x) {
@@ -43,7 +44,7 @@ public class Endereco {
 		
 		this.bairro = arrayAuxiliar1[2].trim();
 	}
-//		Aqui quebramos e tiramos os espaços do conteudo do txt
+//		Aqui quebramos e tiramos os espaï¿½os do conteudo do txt
 
 }
 
