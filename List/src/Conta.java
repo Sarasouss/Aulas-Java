@@ -14,6 +14,6 @@ public class Conta {
 	public String toString() {
 		return "Conta [nome=" + nome + ", valor=" + valor + "]";
 	}
-// o tostring mostrara na tela o que aparecera quando imprimirmos, 
-// fazendo com que n apareca seu endereco
+// o toString mostrara na tela o que aparecera quando imprimirmos, 
+// fazendo com que nao apareca seu endereco
 }

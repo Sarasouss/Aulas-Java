@@ -4,10 +4,10 @@ import java.util.List;
 public class Main {
 
 	public static void main(String[] args) {
-
+//Array: parecem tabelas, onde a definicao do tamanho sera dado pelo criador 
 		List lista = new ArrayList(); 
 		
-		// Criamos o objeto lista e seu construtor ArrayLista
+		// Criamos o objeto lista e seu construtor ArrayList
 
 		lista.add("abc"); 
 		lista.add(true);
@@ -46,11 +46,11 @@ public class Main {
 
 		lista.clear(); // apaga todos registros
 		if (lista.isEmpty()) {
-			System.out.println("Sua lista está vazia!");
+			System.out.println("Sua lista estï¿½ vazia!");
 		}
 
 		Conta conta1 = new Conta("Luz", 100);
-		Conta conta2 = new Conta("Água", 80.65);
+		Conta conta2 = new Conta("ï¿½gua", 80.65);
 
 		List<Conta> listaDeContas = new ArrayList<Conta>();
 		// criamos uma lista com os metodos de conta
