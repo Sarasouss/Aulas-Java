@@ -2,6 +2,7 @@
 public class Aplicacao {
 
 	public static void main(String[] args) {
+//	elementos estaticos: sao funcoes que nao dependem de variaveis, ou seja eles nao pecisam de nada para funcionar
 
 //			Matematica matematica = new Matematica();
 //			
