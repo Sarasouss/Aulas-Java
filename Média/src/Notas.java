@@ -1,7 +1,6 @@
 
 public class Notas {
 
-	//Exercicío 1
 	public static void main(String[] args) {
 		double nota1 = 8.5;
 		double nota2 = 7.5;
@@ -11,26 +10,27 @@ public class Notas {
 		double median3;
 		double mediag;
 		double somap = 10;
-		
+//		Criando as variaveis e adicionando seus atributos
 	
 		System.out.println("Primeira nota " + (nota1));
 		System.out.println("Segunda nota " + (nota2));
 		System.out.println("Terceira nota " + (nota3));
 		System.out.println("-----------------------------------");
+//		Mostrando o valor de acda nota 
 		
+		System.out.println("O peso da nota 1 ï¿½ 3 ");
+		System.out.println("Entï¿½o o resultado dela ï¿½ " +(median1 = nota1 * 3));
+
+		System.out.println("O peso da nota 2 ï¿½ 2"  );
+		System.out.println("Entï¿½o o resultado dela ï¿½ " +(median2 = nota2 * 2));
 		
-		System.out.println("O peso da nota 1 é 3 ");
-		System.out.println("Então o resultado dela é " +(median1 = nota1 * 3));
-		
-		System.out.println("O peso da nota 2 é 2"  );
-		System.out.println("Então o resultado dela é " +(median2 = nota2 * 2));
-		
-		System.out.println("O peso da nota 3 é 5"  );
-		System.out.println("Então o resultado dela é " +(median3 = nota3 * 5));
+		System.out.println("O peso da nota 3 ï¿½ 5"  );
+		System.out.println("Entï¿½o o resultado dela ï¿½ " +(median3 = nota3 * 5));
 		System.out.println("-----------------------------------");
-		
-		System.out.println("Média do Peso das Notas " +(mediag = median1 + median2 + median3));
-		System.out.println("Média Total: " + (mediag / somap));
+//		Mostrando o resultado com o peso de cada nota, sendo media o resultado de nota * o peso	
+		System.out.println("Mï¿½dia do Peso das Notas " +(mediag = median1 + median2 + median3));
+		System.out.println("Mï¿½dia Total: " + (mediag / somap));
+//		Somando as notas e dividindo por 10
 	}
 
 }
