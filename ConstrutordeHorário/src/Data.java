@@ -9,7 +9,8 @@ public class Data {
 	private int hora = -1;
 	private int minuto = -1;
 	private int segundo = -1;
-
+// modificador de acesso: servem para mostrar como o metodo sera mostrado
+//	temos private, protected, public
 // Cria as variaveis
 	public Data(int dia, int mes, int ano) {
 		this.dia = dia;
@@ -19,7 +20,7 @@ public class Data {
 //	Cria o construtor que recebe o dia, o mes e o ano
 
 	public Data(int dia, int mes, int ano, int hora, int minuto, int segundo) {
-//	Novo construtor que recebe informações de data e horário
+//	Novo construtor que recebe informaï¿½ï¿½es de data e horï¿½rio
 
 		this(dia, mes, ano);
 
@@ -32,14 +33,14 @@ public class Data {
 	public void imprimir(int formato) {
 		String data = dia + "/" + mes + "/" + ano;
 //	Imprime a data/hora formatada, de acordo com o formato que voce especificou
-//	Monta a string de impressão da data
+//	Monta a string de impressï¿½o da data
 
 		if (hora == -1) {
-//	Se hora for -1, significa que os dados de horário não serão necessários.
-//	Então visualiza-se só a data
+//	Se hora for -1, significa que os dados de horï¿½rio nï¿½o serï¿½o necessï¿½rios.
+//	Entï¿½o visualiza-se sï¿½ a data
 			System.out.println(data);
 		} else {
-//	Cria uma parte da string do horário 
+//	Cria uma parte da string do horï¿½rio 
 			String horario = ":" + minuto + ":" + segundo;
 
 			if (formato == FORMATO_24H) {
@@ -51,7 +52,7 @@ public class Data {
 					horario += " AM";
 
 				} else if (hora >= 12) {
-//	Se hora é maior ou igual a 12, precisamos diminuir 12 da hora para conseguir o formato 12 horas,
+//	Se hora ï¿½ maior ou igual a 12, precisamos diminuir 12 da hora para conseguir o formato 12 horas,
 //	Precisamos adicionar o PM
 					horario = (hora - 12) + horario;
 					horario += " PM";
