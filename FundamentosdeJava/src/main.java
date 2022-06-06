@@ -1,4 +1,5 @@
 import java.util.Scanner;
+// Importamos a biblioteca de Scanner
 public class main {
 
 	public static void main(String[] args) {
@@ -13,7 +14,8 @@ public class main {
 //		System.out.println(z);
 //		
 //		a = (int)y;
-		//Casting: o a nao consegue receber y por ser menor do que as informaca de y 
+		//Casting: o a nao consegue receber y por ser menor do que as informaca de y
+		//Fazendo o Casting conseguimos mudar isso 
 //		b = x; 
 		// b recebe x por ter espaco sobrando 
 //		
@@ -89,7 +91,7 @@ public class main {
 //			break;
 //		default:
 //			System.out.println("Valor invalido");
-		// default é o que sera realizado caso nenhum preencha os parametros pedidos
+		// default ï¿½ o que sera realizado caso nenhum preencha os parametros pedidos
 //	}
 //		
 //	String semaforo = "verde";
