@@ -6,6 +6,8 @@ public class Refrigerante extends Bebida {
 		super("Refrigerante", false);
 		
 	}
+//	O super() serve para chamar o construtor de quem herdamos
+//	assim conseguimos adicionar mais atributos sem ter que repetir os anteriores.
 //	Adicionamos com o super os parametros de Refrigerante
 
 	@Override

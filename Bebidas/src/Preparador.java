@@ -13,7 +13,7 @@ public class Preparador  {
 		System.out.println("Aquecer Bebida " + bebida.getNome());
 	}
 //	if nos da a opcao de fazer uma acao so se o pararmetro seguir um tipo,
-//	ou seja ele so fara tal coisa se corresponder com o que  é pedido
+//	ou seja ele so fara tal coisa se corresponder com o que e pedido
 	System.out.println("Preparada ;) \n");
 	}
 
