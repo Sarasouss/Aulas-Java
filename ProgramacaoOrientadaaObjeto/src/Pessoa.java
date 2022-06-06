@@ -1,7 +1,9 @@
 
 public class Pessoa {
+	
 	String nome;
 	int numfigurinha;
+	
 //	Criando as variaveis
 	
 	void receber (int numfigurinha) {

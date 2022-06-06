@@ -3,7 +3,7 @@ public class ManipulacaodeObjetos {
 
 	public static void main(String[] args) {
 	
-		Pessoa pessoa1 = new Pessoa (); 
+		Pessoa pessoa1 = new Pessoa(); 
 //		criando variavel e instanciando o objeto
 		pessoa1.nome = "Sara"; 
 		pessoa1.numfigurinha = 8;
