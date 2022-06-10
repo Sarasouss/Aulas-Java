@@ -2,6 +2,8 @@
 public enum DiaDaSemana { 
 // Conseguimos criar todo o conteudo na folha enum e 
 // podemos acessa-las nas outras classes sem ter que repetir diversas vezes.
+// e uma forma de criar uma variável personalizada
+	
 	DOMINGO(1),
 	SEGUNDA(2),
 	TERCA(3),
