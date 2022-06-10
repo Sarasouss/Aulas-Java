@@ -17,7 +17,7 @@ public enum DiaDaSemana {
 		return num;
 	}
 
-
+// Um construtor dos objetos que estão no enum
 	private DiaDaSemana(int num) {
 		this.num = num;
 	}
