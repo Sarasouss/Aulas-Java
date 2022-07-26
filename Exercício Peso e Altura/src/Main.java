@@ -16,7 +16,7 @@ public class Main {
         Scanner entrada = new  Scanner ( System.in );
         
         for ( int  i = 0 ; i < 10 ; i ++) {
-            System.out.println("Escolha o sexo da pessoa 1-Mulher ou 2-Homem: " );
+            System.out.println("Escolha o sexo da pessoa 1-Mulher ou 2-Homem " );
             sexo = entrada.nextInt();
             System.out.println("Digite a altura: ");
             altura = entrada.nextDouble();
@@ -39,7 +39,7 @@ public class Main {
         
         System.out.println("A maior altura do grupo e de " + maior + " M, e a menor e de " + menor + " M" );
         System.out.println("A media de altura dos Homens e " + media + "M");
-        System.out.println("O numero de mulheres e " + qtM);
+        System.out.println("O numero de mulheres e " + qtM );
 
         
 		
